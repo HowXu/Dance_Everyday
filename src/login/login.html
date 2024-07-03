@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>登录和设置</title>
+    <link rel="stylesheet" href="../public/css/login.css">
+    <link rel="stylesheet" href="../public/css/ui.css">
+</head>
+
+<body>
+    <div id="Context2">
+
+        <div id="NavigationBar2">
+
+            <div class="navbar bg-base-100">
+
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-xl" id="title">舞动乾坤</a>
+                </div>
+
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li class="list" id="name"><a>点名页</a></li>
+                        <li class="list" id="login"><a>登录和设置</a></li>
+                        <li class="list" id="about"><a>关于</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-end">
+                    <button class="btn btn-square" id="btMiniliaze2">
+                        <img src="../public/icon/min.svg" alt="">
+                    </button>
+
+                    <button class="btn btn-square" id="btClose2">
+                        <img src="../public/icon/close.svg" alt="">
+                    </button>
+                </div>
+
+            </div>
+        </div>
+        <div class="shell">
+            <form>
+                <h2 id="h2">登录</h2>
+                <div class="form-item">
+                    <label for="username">用户名</label>
+                    <div class="input-wrapper">
+                        <input type="text" id="username" autocomplete="off" autocorrect="off" autocapitalize="off"
+                            spellcheck="false" data-lpignore="true" />
+                    </div>
+                </div>
+                <div class="form-item">
+                    <label for="password">密码</label>
+                    <div class="input-wrapper">
+                        <input type="password" id="password" autocomplete="off" autocorrect="off" autocapitalize="off"
+                            spellcheck="false" data-lpignore="true" />
+                        <button type="button" id="eyeball">
+                            <div class="eye"></div>
+                        </button>
+                        <div id="beam"></div>
+                    </div>
+                </div>
+                <button id="submit">登录后台</button>
+            </form>
+        </div>
+    </div>
+    
+</body>
+<script src="./login.js"></script>
+
+</html>

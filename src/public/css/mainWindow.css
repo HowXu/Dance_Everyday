@@ -1,0 +1,122 @@
+body {
+    -webkit-app-region: drag;
+}
+
+#Context {
+    -webkit-app-region: drag;
+}
+
+#NavigationBar {
+    -webkit-app-region: drag;
+}
+
+#BtClose {
+    -webkit-app-region: no-drag;
+}
+
+#btMiniliaze {
+    -webkit-app-region: no-drag;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+
+#bts {
+    position: fixed;
+    /*or前面的是absolute就可以用*/
+    bottom: 200px;
+    display: inline-block;
+    width: 800px;
+    height: auto;
+}
+
+#texts {
+    position: fixed;
+    /*or前面的是absolute就可以用*/
+    bottom: 400px;
+    display: inline-block;
+    width: 800px;
+    height: auto;
+}
+
+#prgs {
+    position: fixed;
+    /*or前面的是absolute就可以用*/
+    bottom: 80px;
+    left: 26%;
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    display: none;
+}
+
+#loading{
+    position: fixed;
+
+    /*or前面的是absolute就可以用*/
+    left: 48%;
+    bottom: 98px;
+    display: inline-block;
+    width: 400px;
+    height: auto;
+    display: none;
+}
+
+
+#t1{
+    text-align: center;
+    position: absolute;
+    left:13% ;
+}
+
+#t2{
+    
+    position: absolute;
+    left:44% ;
+}
+
+#t3{
+    
+    position: absolute;
+    left:74% ;
+}
+
+#div1{
+    -webkit-app-region: no-drag;
+    position: absolute;
+    left:12% ;
+}
+
+#div2{
+    -webkit-app-region: no-drag;
+    position:absolute;
+    left:43%;
+}
+
+#div3{
+    -webkit-app-region: no-drag;
+    position: absolute;
+    left:74%;
+}
+
+.HelloOne{
+    font-size: 36px;
+    text-align: center;
+    color: black;
+}
+
+.list{
+    -webkit-app-region: no-drag;
+}
+
+#sele{
+    position: absolute;
+    left: 140px;
+    -webkit-app-region: no-drag;
+}
+
+#clo{position: absolute;
+    left: 65px;
+    -webkit-app-region: no-drag;
+}

@@ -1,0 +1,11 @@
+{
+    "name": "dance_everyday",
+    "version": "2.0.0",
+    "description": "我就想问你你跳不跳这个飞饼の舞？",
+    "main": "./index.js",
+    "author": "HowXu",
+    "license": "MIT",
+    "dependencies": {
+    "crypto-js": "^4.2.0"
+  }
+}

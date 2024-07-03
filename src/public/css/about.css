@@ -1,0 +1,61 @@
+body {
+    -webkit-app-region: drag;
+}
+
+#Context3 {
+    -webkit-app-region: drag;
+}
+
+#NavigationBar3 {
+    -webkit-app-region: drag;
+}
+
+#btClose3 {
+    -webkit-app-region: no-drag;
+}
+
+#btMiniliaze3 {
+    -webkit-app-region: no-drag;
+}
+
+img {
+    -webkit-user-drag: none;
+}
+.list{
+    -webkit-app-region: no-drag;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    width: 100%;
+    height: 100vh;
+    /* 背景渐变 */
+    background-image: linear-gradient(-225deg, #231557 0%,
+            #43107a 29%, #FF1361 100%);
+}
+
+canvas {
+    position: fixed;
+    width: 100%;
+    height: 100%;
+    -webkit-app-region: no-drag;
+}
+
+#update{
+    width: 600px;
+    height: 100px;
+    position: absolute;
+    left: 100px;
+    top: 200px;
+}
+
+#sele{
+    width: 100px;
+    position: absolute;
+    left: 350px;
+    bottom:  80px;
+}

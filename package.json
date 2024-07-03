@@ -1,0 +1,50 @@
+{
+  "name": "dance_everyday",
+  "version": "2.0.0",
+  "description": "我就想问你你跳不跳这个飞饼の舞？",
+  "main": "./src/index.js",
+  "author": "HowXu",
+  "license": "MIT",
+  "devDependencies": {
+    "electron": "^28.2.2",
+    "electron-reloader": "^1.2.3"
+  },
+  "scripts": {
+    "dev": "electron ./src/index.js",
+    "pack": "electron-builder --dir",
+    "postinstall": "electron-builder install-app-deps",
+    "dist": "electron-builder ",
+    "dist-win": "electron-builder --win --ia32",
+    "dist-win64": "electron-builder --win --x64",
+    "dist-mac": "electron-builder --mac",
+    "dist-linux": "electron-builder --linux"
+  },
+  "build": {
+    "productName": "Dance_Everyday",
+    "appId": "cn.howxu.dance_everyday",
+    "nsis": {
+      "oneClick": false,
+      "shortcutName": "点名器 2.0",
+      "allowToChangeInstallationDirectory": true
+    },
+    "win": {
+      "icon": "icon.ico"
+    },
+    "extraResources": {
+      "from": "./resources",
+      "to": "./"
+    },
+    "extraFiles": [
+      "./libTB.dll"
+    ],
+    "files": [
+      "./**/*"
+    ],
+    "directories": {
+      "app": "./src"
+    }
+  },
+  "dependencies": {
+    "crypto-js": "^4.2.0"
+  }
+}

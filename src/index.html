@@ -1,0 +1,91 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>飞饼の最爱</title>
+    <link rel="stylesheet" href="./public/css/mainWindow.css">
+    <link rel="stylesheet" href="./public/css/ui.css">
+
+</head>
+
+<body background="./public/background/background2.webp" style="background-size: cover;">
+    <div id="Context">
+
+        <div id="NavigationBar">
+
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-xl">舞动乾坤</a>
+                </div>
+
+                <div class="form-control" id="sele">
+                    <label class="label cursor-pointer">
+                      <span class="label-text" id="tx">开启调试</span> 
+                      <input type="checkbox" class="toggle" unchecked id="clo"/>
+                    </label>
+                  </div>
+
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu menu-horizontal px-1" id="list_div">
+                        <li class="list" id="name"><a>点名页</a></li>
+                        <li class="list" id="login"><a>登录和设置</a></li>
+                        <li class="list" id="about"><a>关于</a></li>
+                    </ul>
+                </div>
+
+                <div class="navbar-end">
+                    <button class="btn btn-square" id="btMiniliaze">
+                        <img src="./public/icon/min.svg" alt="">
+                    </button>
+
+                    <button class="btn btn-square" id="btClose">
+                        <img src="./public/icon/close.svg" alt="">
+                    </button>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <div id="texts">
+            <div id="t1">
+                <h1 class="HelloOne" id="t11">长安虫</h1>
+            </div>
+
+            <div id="t2">
+                <h1 class="HelloOne" id="t22">套文撅</h1>
+            </div>
+
+            <div id="t3">
+                <h1 class="HelloOne" id="t33">林潇湘</h1>
+            </div>
+        </div>
+
+        <div id="bts">
+            <div id="div1">
+                <button class="btn btn-lg" id="bt1">抽一个人</button>
+            </div>
+
+            <div id="div2">
+                <button class="btn btn-lg" id="bt2">抽两个人</button>
+            </div>
+
+            <div id="div3">
+                <button class="btn btn-lg" id="bt3">抽三个人</button>
+            </div>
+        </div>
+
+        <div id="loading">
+            <span class="loading loading-infinity loading-lg"></span>
+        </div>
+
+        <div id="prgs">
+            <progress id="pgs" class="progress progress-error w-56" value="0" max="100"></progress>
+        </div>
+    </div>
+
+</body>
+<script src="./ipc/remote.js"></script>
+</html>
