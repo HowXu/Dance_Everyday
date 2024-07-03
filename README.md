@@ -34,6 +34,9 @@ true //开启时间限制
 
 # 开发
 
+因为`libTB.dll`和`names.config`的创建来源不明，这个部分进一步的开发貌似陷入闭环，但是可以手动解决：  
+
+在第一次`yarn dev`失败后，<font style="color:red">手动</font>将`libTB.dll`放入`项目根目录的node_modules/electron/dist`路径下，将`resouces`下的`res`文件夹放在`项目根目录的node_modules/electron/dist/resources`路径下。  
 
 ## 下载依赖
 
@@ -55,7 +58,7 @@ yarn dist
 
 更多详情访问`package.json`文件
 
-因为`libTB.dll`和`names.config`的创建来源不明，这个部分进一步的开发貌似陷入闭环
+
 
 # 写在最后
 
