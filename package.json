@@ -1,6 +1,6 @@
 {
   "name": "dance_everyday",
-  "version": "2.0.0",
+  "version": "2.1",
   "description": "我就想问你你跳不跳这个飞饼の舞？",
   "main": "./src/index.js",
   "author": "HowXu",
@@ -24,7 +24,7 @@
     "appId": "cn.howxu.dance_everyday",
     "nsis": {
       "oneClick": false,
-      "shortcutName": "点名器 2.0",
+      "shortcutName": "点名器 2.1",
       "allowToChangeInstallationDirectory": true
     },
     "win": {
