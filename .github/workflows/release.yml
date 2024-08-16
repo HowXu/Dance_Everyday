@@ -17,6 +17,9 @@ jobs:
         uses: actions/setup-node@v4
         with:
           node-version: 20.15.0
+      
+      - name: Setup Electron-builder
+        run: npm install electron-builder -g
 
       - name: Install Packages
         run: npm install
