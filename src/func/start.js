@@ -7,12 +7,20 @@ let bt1 = document.getElementById("bt1");
 let bt2 = document.getElementById("bt2");
 let bt3 = document.getElementById("bt3");
 
+let bts = [bt1,bt2,bt3];
+let ts = [t1,t2,t3];
+
 let loading = document.getElementById("loading");
 let prgs = document.getElementById("prgs");
 let pgs = document.getElementById("pgs");
 
 let list_div = document.getElementById("list_div");
 
+function set_bts(bts_,style){
+    for (let index = 0; index < bts_.length; index++) {
+        bts_[index].style.display = style;
+    }
+}
 
 function getName(args, check) {
     return args[parseInt(Math.random() * args.length)];
@@ -22,9 +30,10 @@ function setUnvisiable() {
 
     //pgs.style.transition = "0.2s linear";
 
-    bt1.style.display = "none";
-    bt2.style.display = "none";
-    bt3.style.display = "none";
+    // bt1.style.display = "none";
+    // bt2.style.display = "none";
+    // bt3.style.display = "none";
+    set_bts(bts,"none")
     loading.style.display = "block";
     prgs.style.display = "block";
 }
@@ -34,9 +43,10 @@ function setAllUnvisiable() {
     list_div.style.display = "none";
 }
 function setVisiable() {
-    bt1.style.display = "block";
-    bt2.style.display = "block";
-    bt3.style.display = "block";
+    // bt1.style.display = "block";
+    // bt2.style.display = "block";
+    // bt3.style.display = "block";
+    set_bts(bts,"block");
     loading.style.display = "none";
     prgs.style.display = "none";
 }
@@ -47,6 +57,8 @@ let countall = 20;
 let isFinish = false;
 let pgs_count = 100 / countall;
 
+//Update 2024.10.13 更新代码逻辑
+
 function nameChange(args, k, check) {
     //alert(check)
     if (isFinish) {
@@ -54,12 +66,17 @@ function nameChange(args, k, check) {
         return;
     }
 
+    //初始设置为black
     t1.style.color = "black";
     t2.style.color = "black";
     t3.style.color = "black";
     count++;
     pgs.value += pgs_count;
     setUnvisiable();
+
+    //其实可以直接获得一切所有然后单独写一个判断k的东西的
+    
+
     if (k == 1) {
         //alert(2)
         let temp1 = t1.innerText;
