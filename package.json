@@ -6,8 +6,9 @@
   "author": "HowXu",
   "license": "MIT",
   "devDependencies": {
-    "electron": "^28.2.2",
-    "electron-reloader": "^1.2.3"
+    "electron": "32.2.0",
+    "electron-reloader": "^1.2.3",
+    "electron-builder": "24.6.3"
   },
   "scripts": {
     "dev": "electron ./src/index.js",
