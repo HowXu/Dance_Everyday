@@ -1,6 +1,6 @@
 {
   "name": "dance_everyday",
-  "version": "2.2.0",
+  "version": "2.3.0",
   "description": "我就想问你你跳不跳这个飞饼の舞？",
   "main": "./src/index.js",
   "author": "HowXu",
