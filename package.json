@@ -25,7 +25,7 @@
     "appId": "cn.howxu.dance_everyday",
     "nsis": {
       "oneClick": false,
-      "shortcutName": "点名器 2.2",
+      "shortcutName": "点名器 2.3",
       "allowToChangeInstallationDirectory": true
     },
     "win": {
